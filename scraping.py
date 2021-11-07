@@ -1,6 +1,6 @@
-# copied directly form canvas for testing
-# worked ish...
-
+# challenge 10
+# worked 
+# need to clean-up before submission
 
 
 # Import Splinter, BeautifulSoup, and Pandas
@@ -32,7 +32,6 @@ def scrape_all():
     browser.quit()
     return data
 
-
 def mars_news(browser):
 
     # Scrape Mars News
@@ -59,7 +58,6 @@ def mars_news(browser):
         return None, None
 
     return news_title, news_p
-
 
 def featured_image(browser):
     # Visit URL
@@ -104,9 +102,7 @@ def mars_facts():
     return df.to_html(classes="table table-striped")
 
 
-
 # D 2 insert here
-# D 2 
 def hemisphere_info():
     # D1 
     executable_path = {'executable_path': ChromeDriverManager().install()}
