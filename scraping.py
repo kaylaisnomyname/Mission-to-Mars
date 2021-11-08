@@ -1,7 +1,5 @@
 # challenge 10
 # worked 
-# need to clean-up before submission
-
 
 # Import Splinter, BeautifulSoup, and Pandas
 from splinter import Browser
@@ -9,7 +7,6 @@ from bs4 import BeautifulSoup as soup
 import pandas as pd
 import datetime as dt
 from webdriver_manager.chrome import ChromeDriverManager
-
 
 def scrape_all():
     # Initiate headless driver for deployment
@@ -106,7 +103,7 @@ def mars_facts():
 def hemisphere_info():
     # D1 
     executable_path = {'executable_path': ChromeDriverManager().install()}
-    browser = Browser('chrome', **executable_path, headless=False) 
+    browser = Browser('chrome', **executable_path, headless=True) 
     # 1. Use browser to visit the URL 
     url = 'https://marshemispheres.com/'
     browser.visit(url)
