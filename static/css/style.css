@@ -1,0 +1,9 @@
+/*  to add image to the jumbotron class*/ 
+
+.jumbotron {
+    background-image: url("../images/NGC2336-galaxy.en.jpg");
+    background-size: 100% 100%;
+    text-align: center;
+    color: #E9E4D4;
+}
+
